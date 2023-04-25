@@ -1,0 +1,216 @@
+
+:root {
+    --bleu: #d8f0ff;
+    --darkblue: #292759;
+    --violet: #483E8C;
+    --jaune: #F2A81D;
+    --jauneclair:#eae5af;
+
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap'); 
+
+body {
+    font: 400 15px "Roboto", sans-serif;
+    line-height: 1.8;
+    color: black;
+  }
+
+h2 {
+    font-size: 24px;
+    text-transform: uppercase;
+    color: black;
+    font-weight: 600;
+    margin-bottom: 20px;
+  }
+
+  h4 {
+    font-size: 18px;
+    line-height: 1.375em;
+    font-weight: 400;
+    margin-bottom: 10px;
+  }  
+
+
+  .jumbotron {
+    background-color: var(--bleu);
+    color:black;
+    padding: 50px 10px;
+    font-family: "Roboto", sans-serif;
+    
+  }
+
+  .strong {
+    font-family: "Roboto", sans-serif;
+    font-weight: lighter;
+  }
+  .container-fluid {
+    padding: 60px 50px;
+  }
+
+  .container-fluid img {
+    max-width: 100%;
+  }
+
+  .bg-bleu {
+    background-color: var(--bleu);
+   
+    background-repeat: no-repeat;
+  }
+
+
+  .btn {
+    border-radius: 30px;
+    border: 2px solid var(--bleu);
+    background-color: transparent;
+    margin-bottom: 10px; 
+    
+    transition: all .3s;
+
+  }
+
+  .btn:hover {
+    background-color: var(--jaune);
+    border: 2px solid var(--jaune);
+    color: white;    
+  }
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+  /* Navigation */
+
+  .navbar {
+    margin-bottom: 0;
+    background-color: var(--bleu);
+    z-index: 9999;
+    border: 0;
+    font-size: 12px !important;
+    text-transform: uppercase;
+    font-weight: bold;
+    line-height: 1.42857143 !important;
+    letter-spacing: 4px;
+    border-radius: 0;
+    font-family: "Roboto", sans-serif;
+  }
+  .navbar li a, .navbar .navbar-brand {
+    color:black !important;
+
+  }
+  .navbar-nav li a:hover, .navbar-nav li.active a {
+    color: var(--darkblue) !important;
+    background-color: #fff !important;
+  }
+
+  .navbar-default .navbar-collapse, .navbar-default .navbar-form {
+    border-color: white;
+}
+  .navbar-default .navbar-toggle {
+    border-color: transparent;
+    color: #fff !important;
+  }
+  .navbar img {
+    margin:auto;
+    width: 30px;
+    position: relative;
+    bottom: 5px; 
+    
+  } 
+
+  /* Navbar collapsed properties */
+
+  .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
+    background-color: var(--bleu);
+  }
+
+  .navbar-default .navbar-toggle .icon-bar {
+    background-color: var(--violet);
+  }
+
+  /* Footer */
+
+  footer .glyphicon {
+    font-size: 20px;
+    margin-bottom: 20px;
+    color: var(--jaune);
+  }
+
+  /* Animation au scroll */
+
+  .slideanim {visibility:hidden;}
+  .slide {
+    animation-name: slide;
+    -webkit-animation-name: slide;
+    animation-duration: 0.8s;
+    -webkit-animation-duration: 0.8s;
+    visibility: visible;
+  }
+  @keyframes slide {
+    0% {
+      opacity: 0;
+      transform: translateY(70%);
+    } 
+    100% {
+      opacity: 1;
+      transform: translateY(0%);
+    }
+  }
+  @-webkit-keyframes slide {
+    0% {
+      opacity: 0;
+      -webkit-transform: translateY(70%);
+    } 
+    100% {
+      opacity: 1;
+      -webkit-transform: translateY(0%);
+    }
+  }
+
+
+
+
+/* Formulaire */
+
+
+input[type=text], input[type=email], textarea.form-control {
+  width: 100%;  
+  box-sizing: border-box;
+  
+  border: 2px solid var(--bleu);
+  box-shadow: none;
+  border-radius: 0px;
+}
+
+
+input[type=text]:focus , input[type=email]:focus , textarea.form-control:focus {
+  box-shadow: none;
+  border: 2px solid var(--jaune);
+
+}
+  /* Mediaqueries */
+
+  @media screen and (max-width: 768px) {
+    .col-sm-4 {
+      text-align: center;
+      margin: 25px 0;
+    }
+    .btn-lg {
+      width: 100%;
+      margin-bottom: 35px;
+    }
+  }
+  @media screen and (max-width: 480px) {
+    .logo {
+      font-size: 150px;
+    }
+  }

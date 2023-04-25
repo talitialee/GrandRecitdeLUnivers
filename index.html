@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> 
+  <title>Grand Récit de l'Univers - le jeu</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">  
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="style.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <script src="myscript.js"></script>
+  <link rel="icon" type="image/x-icon" href="resources/atomique_violet.png">
+  
+</head>
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
+
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#myPage"><img src="resources/atomique_jaune.png" alt="Home"></a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#expo">L'exposition</a></li>
+        <li><a href="#illus">Illustrations</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="jumbotron text-center bg-gradient">
+    <h1>Le Grand Récit de l'Univers</h1>
+    <h4>Cité des sciences et de l'industrie</h4>
+    <!--Parcourez l'exposition grâce à ce jeu de cartes ludique !</p> -->
+    <!-- test <span><img src="resources/IlluGRU_signatureviolette_PNG/GRU_dino2.png" alt="dinosaures" width="200px"></span> -->
+    
+  </div>
+
+<!-- Container (Exposition Section) -->
+<div id="expo" class="container-fluid">
+  <div class="row">
+    <div class="col-sm-6">
+      <h2>L'exposition</h2><br>
+      <h4>Cette exposition est une enquête sur l'histoire de la matière qui nous entraîne de la Terre au vide intergalactique. Dans une scénographie immersive, vous découvrirez l’histoire de la Terre et de l’univers, le probable scénario de création de l'Univers et son expansion depuis plus de 13 milliards d'années.</h4>
+      <h4>Le jeu : distribuez à vos élèves des cartes sélectionnés selon les thèmes (grands événements géologiques, histoire des sciences, sciences et récits) et les niveaux de difficulté. <br>Le but : replacer toutes les cartes dans leur ordre chronologique, en s'aidant de l'exposition.</h4>
+      <p>Ce jeu est conçu pour les classes de lycée.</p><br>  
+      <a href="https://www.cite-sciences.fr/fr/au-programme/expos-permanentes/les-expositions/le-grand-recit-de-lunivers/lexposition" target="_blank"><button type="button" class="btn" id="btn1">En savoir plus</button></a>
+      
+    </div>
+    <div class="col-sm-6 text-center">
+      <img src="resources/MockUpGRU_3Cards_2.png" alt="cartes à jouer GRU" width=600px>
+    </div>
+  </div>
+</div>
+
+<!-- Container (Illustrations Section) -->
+<div id="illus" class="container-fluid text-center bg-bleu">
+  <h2>Illustrations</h2>
+  <br>
+  <div class="row slideanim">
+    <div class="col-sm-4">
+        <img src="resources/IlluGRU_signatureviolette_PNG/GRU_Newton.png" alt="Newton">
+        <h4>Isaac Newton</h4>
+        <p>Et la force gravitationnelle</p>
+       
+    </div>
+    <div class="col-sm-4">
+        <img src="resources/IlluGRU_signatureviolette_PNG/GRU_einstein.png" alt="Einstein">
+      <h4>Albert Einstein</h4>
+      <p>Et la relativité générale</p>
+       
+    </div>
+    <div class="col-sm-4">
+        <img src="resources/IlluGRU_signatureviolette_PNG/GRU_mariecurie.png" alt="Marie Curie">
+      <h4>Marie Curie</h4>
+      <p>Et la radioactivité</p>
+    </div>
+  </div>
+  <br><br>
+  <div class="row slideanim">
+    <div class="col-sm-4">
+        <img src="resources/IlluGRU_signatureviolette_PNG/GRU_bigbang.png" alt="Big Bang">
+        <h4>Le Big Bang</h4>
+        <p>Aux origines de l'Univers</p>
+    </div>
+    <div class="col-sm-4">
+        <img src="resources/IlluGRU_signatureviolette_PNG/GRU_naissanceterre.png" alt="Naissance de la Terre">
+        <h4>Naissance de la Terre</h4>
+        <p>Aux origines de notre planète</p>
+    </div>
+    <div class="col-sm-4">
+        <img src="resources/IlluGRU_signatureviolette_PNG/GRU_pangee.png" alt="Pangée">
+        <h4>Séparation de la Pangée</h4>
+        <p>L'ouverture de l'océan Atlantique</p>
+    </div>
+  </div>
+</div>
+
+<!-- Formulaire de contact -->
+
+<div id="contact" class="container-fluid text-center">
+  <h2 class="text-center">CONTACT</h2>
+  
+      <div class="row">
+        <div class="col-sm-6 form-group">
+          <input class="form-control" id="name" name="name" placeholder="Nom" type="text" required>
+        </div>
+        <div class="col-sm-6 form-group">
+          <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
+        </div>
+      </div>
+      <textarea class="form-control" id="comments" name="comments" placeholder="Commentaire" rows="5"></textarea><br>
+      <div class="row">
+        <div class="col-sm-12 form-group">
+          <button class="btn btn-default pull-right" type="submit">Envoyer</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<footer class="container-fluid text-center">
+  <a href="#myPage" title="To Top">
+    <span class="glyphicon glyphicon-chevron-up"></span>
+  </a>
+  <p>Website and illustrations by Alice Reuter</p>
+</footer>
+
+
+</body>
+</html>
